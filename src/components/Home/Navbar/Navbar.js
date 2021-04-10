@@ -9,12 +9,12 @@ const NavBar = () => {
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="ms-auto">
-          <Link className="nav-link ms-4" href="#features">Home</Link>
-          <Link className="nav-link ms-4" href="#pricing">About</Link>
-          <Link className="nav-link ms-4 text-white" href="#features">Dental service</Link>
-          <Link className="nav-link ms-4 text-white" href="#pricing">Reviews</Link>
-          <Link className="nav-link ms-4 text-white" href="#features">Blog</Link>
-          <Link className="nav-link ms-4 text-white" href="#pricing">Contact Us</Link>
+          <Link className="nav-link ms-4" to="/">Home</Link>
+          <Link className="nav-link ms-4" to="/appointment">About</Link>
+          <Link className="nav-link ms-4 text-white" to="">Dental service</Link>
+          <Link className="nav-link ms-4 text-white" to="">Reviews</Link>
+          <Link className="nav-link ms-4 text-white" to="">Blog</Link>
+          <Link className="nav-link ms-4 text-white" to="">Contact Us</Link>
         </Nav>
       </Navbar.Collapse>
     </Navbar>

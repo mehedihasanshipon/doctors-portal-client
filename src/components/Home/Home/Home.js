@@ -1,7 +1,9 @@
 import React from 'react';
 import Blogs from '../Blogs/Blogs';
+import Contact from '../Contact/Contact';
 import Doctors from '../Doctors/Doctors';
 import FeaturedService from '../FeaturedService.js/FeaturedService';
+import Footer from '../../Shared/Footer/Footer';
 import Header from '../Header/Header';
 import MakeAppointment from '../MakeAppoinment/MakeAppointment';
 import Services from '../Services/Services';
@@ -17,6 +19,8 @@ const Home = () => {
             <Testimonial />
             <Blogs />
             <Doctors />
+            <Contact />
+            <Footer />
         </div>
     );
 };

@@ -1,0 +1,13 @@
+.bookAppointment .bookCard{
+    /* border: 1px solid salmon; */
+    box-shadow: 2px 2px 5px gray;
+}
+.bookAppointment .book-btn{
+    border: 0;
+    border-radius: 4px;
+    background-color: #10CFE8;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 30px;
+}
