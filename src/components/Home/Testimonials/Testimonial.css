@@ -1,0 +1,6 @@
+.testimonials .container{
+    background-image: url('../../../images/qoute.png');
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: top right;
+}

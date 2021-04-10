@@ -1,0 +1,12 @@
+.testi-card{
+    overflow: hidden !important;
+    box-shadow: 2px 2px 5px gray;
+    transition: all .4s ease-in-out;
+}
+.testi-card:hover{
+    transform: scale(1.1);
+    
+}
+.testi-card img{
+    height: 70px;
+}

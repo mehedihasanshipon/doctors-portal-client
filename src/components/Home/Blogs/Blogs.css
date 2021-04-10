@@ -1,0 +1,36 @@
+.blog-card{
+    box-shadow: 2px 2px 5px gray;
+    border-radius: 5px;
+    height: 100%;
+    z-index: 1 !important;
+    transition:  1s  all ease-in-out !important;
+}
+
+.blogs .blog-card:hover{
+    background: linear-gradient(75deg, #19D3AE,#0fcfec) !important;
+    color: #fff !important;
+    
+    z-index: -1 !important;
+}
+
+ .blog-card:hover .blog-card-body{
+    background: url('../../../images/qoute.png');
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 60%;
+    z-index: -50 !important;
+}
+
+.blogs .blog-card:hover h6,
+.blogs .blog-card:hover p
+{
+    color: #fff !important;
+}
+
+.blog-card img{
+    height: 70px;
+}
+
+.blogs .blog-card:hover img{
+    display: none;
+}
