@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Doctor from "../Doctor/Doctor";
 import doctorImg from '../../../images/doctor.png'
 import './Doctors.css'
@@ -21,7 +21,16 @@ const doctorData =[
     }
 ]
 
+
 const Doctors = () => {
+  const [doctors,setDoctors] = useState([]);
+  useEffect(()=>{
+    fetch('http://localhost:3002/doctors')
+    .then(res=>res.json())
+    .then(data=>{
+      setDoctors(data);
+    })
+  },[])
   return (
     <section className="container  mt-5">
       <div className="text-center">
@@ -29,7 +38,7 @@ const Doctors = () => {
       </div>
       <div className="row">
           {
-              doctorData.map(doctor => <Doctor doctor={doctor} />)
+              doctors.map(doctor => <Doctor doctor={doctor} />)
           }
       </div>
     </section>
