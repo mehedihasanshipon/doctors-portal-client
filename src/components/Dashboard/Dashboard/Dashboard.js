@@ -3,8 +3,12 @@ import AppointmentByDate from "../AppointmentByDate/AppointmentByDate";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 import SideBar from "../../Appointment/SideBar/SideBar";
+import { useContext } from "react";
+import { UserContext } from "../../../App";
 
 const Dashboard = () => {
+
+  const [loggedInUser,setLoggedInUser] = useContext(UserContext);
   const containerStyle = {
     backgroundColor: "#F4FDFB",
     height: "100%",
@@ -23,7 +27,7 @@ const Dashboard = () => {
       headers: {
         "Content-type": "application/json; charset=UTF-8",
       },
-      body: JSON.stringify({ date: selectedDate }),
+      body: JSON.stringify({ date: selectedDate,email: loggedInUser.email }),
     })
       .then((res) => res.json())
       .then((data) => {
