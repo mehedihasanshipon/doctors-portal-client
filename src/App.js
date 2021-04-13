@@ -34,9 +34,9 @@ function App() {
           <PrivateRoute exact path="/dashboard/appointment">
             <Dashboard />
           </PrivateRoute>
-          <Route exact path="/addDoctor">
+          <PrivateRoute exact path="/addDoctor">
             <AddDoctor />
-          </Route>
+          </PrivateRoute>
         </Switch>
       </Router>
     </UserContext.Provider>

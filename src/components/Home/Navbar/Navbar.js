@@ -11,7 +11,7 @@ const NavBar = () => {
         <Nav className="ms-auto">
           <Link className="nav-link ms-4" to="/">Home</Link>
           <Link className="nav-link ms-4" to="/appointment">About</Link>
-          <Link className="nav-link ms-4 text-white" to="">Dental service</Link>
+          <Link className="nav-link ms-4 text-white" to="/addDoctor">Dental service</Link>
           <Link className="nav-link ms-4 text-white" to="">Reviews</Link>
           <Link className="nav-link ms-4 text-white" to="">Blog</Link>
           <Link className="nav-link ms-4 text-white" to="">Contact Us</Link>
